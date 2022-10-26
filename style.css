@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+} 
+
+/* Start Header */
+
+/* start navbar */
+.lines{
+    width:100%;
+    height: 2px;
+    background-color: skyblue;
+    display:none;
+}
+
+.nav-link:focus{
+    color:#000;
+}
+
+.nav-link:focus .lines{
+    display:block;
+}
+
+@media (max-width:990px){
+    .nav-link:focus .lines{
+        display:none;
+    }
+}
+ 
+
+/* end navbar */
+
+
+/* start banner */
+.banners{
+    height: 100vh;
+
+    position: relative;
+}
+
+.bgcolors{
+    width:50%;
+    height: 70vh;
+    background-color:#cae8d5;
+    
+    position: absolute;
+    right:0;
+    bottom:0;
+
+    z-index: -1;
+}
+
+/* .banners .container{
+ height: 100vh;
+} */
+
+.backgroundimgs{
+    background: url("./image/image1.webp");
+    background-position: center;
+    background-size: cover;
+    height:85vh;
+}
+
+/* end banner */
+/* End Header */
+
+
+/* Start Services Section */
+.servicetitles{
+    font-family: 'Amiri', serif;
+    font-style: italic;
+}
+
+.servicecards{
+    width:100%;
+}
+
+.serviceimgs{
+    width: 50%;
+}
+
+.serviceimgs img{
+    width: 100%;  
+}
+
+.servicetxts{
+    width: 50%;
+    margin:auto 30px;
+}
+
+.servicetxts h5{
+    font-family:  "Amiri", serif;
+    margin-bottom: 8px;
+}
+
+.servicetxts p{
+    line-height: 2rem;
+}
+
+@media (max-width:990px){
+    .serviceimgs{
+        width: 40%;
+    }
+
+    .servicetxts{
+        width: 60%;
+        
+    }
+}
+/* End Services Section */
+
+
+
+/* Start Marriages Section */
+
+.marriagetitles{
+    font-family: "Amiri", serif;
+    font-style: italic;
+    padding:180px 0 0px 0;
+}
+
+.marriages .container{
+    width:100%; 
+    height:130vh;
+ 
+    position: relative; 
+}
+
+.carousels{
+    width:100%;
+    height:100%;
+
+    background:linear-gradient(
+        360deg,    
+        #cae8d5 70%,
+        #fff 30%);
+
+}
+
+.carousel-inner,.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carlimgs{
+    height: 60%;
+    padding:0 80px;
+    filter:brightness(1.1);
+}
+
+.carouseltexts{
+    height:35%;
+    padding:30px 200px;
+}
+
+.carouseltexts p{
+    line-height: 2em;
+}
+
+@media (max-width:990px){
+    .carouseltexts{
+        padding:30px 100px;
+    }
+}
+
+@media (max-width:770px){
+    .carlimgs{
+        height: 55%;
+        padding:0;
+    }
+
+    .carouseltexts{
+        /* height: 45%; */
+        padding:30px 0;
+    }
+     
+}
+/* End Marriages Section */
+
+
+/* Start Activity Section */
+.activity h4{
+    font-family: 'Amiri', serif;
+    font-size:1.5em;
+}
+
+.flatimgs{
+    width:80px;
+    height:80px;
+    background-color: #cae8d5;
+    padding:10px 12px 0 12px;
+    border-radius: 50%;
+}
+
+/* End Activity Section */
+
+
+
+/* Start Question Section */
+.qustitles{
+    font-family: 'Amiri', serif;
+    font-style: italic;
+}
+
+.boxheader{
+    font-family: 'Amiri', serif;
+    font-size: 1.2em;
+    cursor: pointer;
+} 
+
+.boxitem{
+    line-height: 1.8em;
+  
+}
+
+/* .active{
+    color:#000;
+} */
+/* End Question Section */
+
+
+
+/* Start Footer Section */
+footer{
+    background-color: rgb(40, 39, 39);
+}
+
+footer .container{
+    padding:100px 0;
+}
+
+.footertxts{
+    font-family: 'Amiri', serif;
+    font-size:1em;
+    margin-bottom: 30px;
+}
+
+/* for left */
+.footerlefts p{
+    line-height: 1.6em;
+    letter-spacing: 1px;
+}
+
+
+/* for center */
+.footercenters{
+    padding-left: 50px;
+}
+
+.footercenters ul li{
+    list-style: none;
+    text-decoration: none;
+    margin:15px 0;
+}
+
+@media (max-width:767px){
+    .footercenters{
+        padding-left: 10px;
+    } 
+}
+
+
+/* for right */
+.emails{
+    padding:10px 100px 10px 20px;
+    color:#aaa;
+    background-color: rgb(40, 39, 39);
+    border:1px solid gray;
+    border-radius:30px 0 0 30px;
+}
+
+.sends{
+  
+    background-color: #cae8d5;
+    padding:10px 30px 10px 20px;
+    border:1px solid #cae8d5;
+    border-radius:0 30px 30px 0;
+
+    position: absolute;
+  
+}
+.sends:hover{
+    background-color: grey;
+    border:1px solid gray;
+}
+
+.fa-brands{
+    color:gray;
+    transition: all 0.2s;
+}
+
+.fa-brands:hover{
+    color:#f4f4f4;
+}
+
+.copyrights{
+    margin-top:50px;
+    border-top:1px solid gray;
+}
+
+.copyrights .small{
+    margin:50px 0;
+}
+/* End Footer Section */
+
+
+
